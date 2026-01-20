@@ -1,1 +1,50 @@
-# cdyUuu.github.io
+
+星海音乐源（xinghai-music-source.js）
+ 
+为 LX Music 设计的双api聚合自定义音乐源脚本
+ 
+基础信息
+​
+- 作者：万去了了
+​
+- 更新链接：https://zrcdy.dpdns.org/lx/xinghai-music-source.js
+​
+- 反馈邮箱：cdy123456_2021@qq.com
+​
+ 
+核心特性
+ 
+- 双API引擎：主引擎（GD Studio API）+ 备用引擎（TuneHub API），提升可用性
+​
+- 多平台支持：覆盖网易云音乐、QQ音乐、酷我音乐、酷狗音乐、咪咕音乐（备用API支持前三者）
+​
+- 全音质覆盖：支持128k/192k/320k/flac，网易云/QQ/酷我/酷狗额外支持flac24bit
+​
+- 自动更新机制：支持版本比对、更新通知
+ 
+支持平台与音质详情（api能够使用的情况下）
+
+网易云音乐：提供128k、192k、320kbps及FLAC、FLAC 24bit音质选项。
+QQ音乐：支持128k、192k、320kbps及FLAC、FLAC 24bit音质。
+酷我音乐：同样提供128k、192k、320kbps及FLAC、FLAC 24bit音质选择。
+酷狗音乐：音质选项包括128k、192k、320kbps及FLAC、FLAC 24bit。
+咪咕音乐：提供128k、192k、320kbps及FLAC音质选项。
+
+安装步骤
+ 
+1. 打开 LX Music，进入「我的」→「设置」
+​
+
+2. 找到「自定义音源」，点击「添加音源」
+​
+
+3. 粘贴脚本链接并保存：
+https://zrcdy.dpdns.org/lx/xinghai-music-source.js
+ 
+免责声明
+ 
+- 本脚本仅用于个人学习与交流，所有音乐资源均来自公开网络API
+​
+- 请遵守相关法律法规，支持正版音乐，勿用于商业用途
+​
+- 音源可用性依赖第三方API稳定性，若出现失效可等待脚本更新

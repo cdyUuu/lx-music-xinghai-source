@@ -13,8 +13,8 @@
 | 平台 | 音质选项 |
 |------|----------|
 | 网易云音乐 | 128k / 192k / 320kbps / FLAC / FLAC 24bit / Hi-Res / 臻品音质 / 沉浸声 / 臻品母带 |
-| QQ音乐 | 128k / 192k / 320kbps / FLAC |
-| 酷我音乐 | 128k / 192k / 320kbps / FLAC / FLAC 24bit |
+| QQ音乐 | 128k / 192k / 320kbps / FLAC / Hi-Res / 杜比全景声 / 杜比全景声+ / 母带 |
+| 酷我音乐 | 128k / 320kbps / FLAC / Hi-Res / 杜比全景声 / 母带 |
 | 酷狗音乐 | 128k / 320kbps / FLAC / Hi-Res / 杜比全景声 / 母带 |
 | 咪咕音乐 | 128k / 320kbps / FLAC |
 
@@ -27,11 +27,18 @@
 
 ## 酷我加密音频解密
 
-酷我平台的高音质音频通常以 `.mflac`（加密 FLAC）或 `.mgg`（加密 OGG）格式返回，附带 `ekey` 解密密钥。配合中转解密服务器可实现自动解密：
+酷我平台的高音质音频通常以 `.mflac`（加密 FLAC）或 `.mgg`（加密 OGG）格式返回，附带 `ekey` 解密密钥。
 
-1. 部署 [kuwo-music-relay](https://github.com/cdyUuu/kuwo-music-relay) 中转服务器
-2. 插件获取到加密音频链接和 ekey 后，自动通过中转服务器解密
-3. 播放器直接获取可播放的明文音频流
+**注意：插件默认不会返回加密歌曲，需要自行部署解密服务并配置后才会启用。**
+
+配置步骤：
+
+1. 自行部署 [kuwo-music-relay](https://github.com/cdyUuu/kuwo-music-relay) 中转解密服务器（PHP 单文件，支持 Docker）
+2. 打开插件 JS 文件，在第 14 行附近的 `KW_DECRYPT_PROXY` 配置区域填入你的服务器地址
+3. 将 `allowEncryptedLossless` 设为 `true`
+4. 配置完成后，插件会将加密音频链接和 ekey 发送到你的解密服务器，解密后返回明文音频流
+
+未配置解密服务时，酷我平台仅返回 128k / 320k / FLAC 等非加密格式。
 
 ## 免责声明
 

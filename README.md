@@ -61,7 +61,7 @@
 欢迎通过 Issue 反馈问题，或直接联系作者。
 ## 📈 30天流量趋势
 
-![30天流量趋势](https://yy.zddyr.top/lx/api/panel.php?key=123456&action=trend_image&days=30)
+![30天流量趋势](https://yy.zddyr.top/lx/api/panel.php?key=trend_image_secret_2026&action=trend_image&days=30)
 
 ## 关于赞赏
 

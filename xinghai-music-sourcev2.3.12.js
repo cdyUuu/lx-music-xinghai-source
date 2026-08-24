@@ -5,6 +5,7 @@
  * @Update  移除旧VIP接口(api.chksz.top)；新增ChKSz新接口(api.chksz.com)支持网易SVIP/QQ；酷我支持无损以上加密链接返回(需自行配置解密代理,配置方法代码14行,默认不会返回加密歌曲)；优化GD网易接口回退逻辑。注意：ChKSz apikey 与酷我解密代理均需自行配置，详见代码第10行附近
  * @author 万去了了
  * @homepage https://zrcdy.dpdns.org/
+ * @feedback yy@zddyr.top
  * @lastUpdate 2026-08-18
  * @md5 
  */

@@ -58,6 +58,7 @@
 ## 反馈与支持
 
 反馈链接：[https://zrcdy.dpdns.org/send_news.php](https://zrcdy.dpdns.org/send_news.php)
+反馈邮箱：[yy@zddyr.top](mailto:yy@zddyr.top)
 欢迎通过 Issue 反馈问题，或直接联系作者。
 ## 📈 30天流量趋势
 

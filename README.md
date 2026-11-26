@@ -60,7 +60,10 @@
 反馈链接：[https://zrcdy.dpdns.org/send_news.php](https://zrcdy.dpdns.org/send_news.php)
 反馈邮箱：[yy@zddyr.top](mailto:yy@zddyr.top)
 欢迎通过 Issue 反馈问题，或直接联系作者。
-## 📈 30天流量趋势
+## 📈 音乐请求量趋势（近 30 天）
+
+> 统计口径：本机音乐接口（`/lx/api/`、`kwplay.php`、`lyric.php`、`hot.php`）的每日请求数，
+> 自 2026-11-26 起逐日累计，图上会随天数增长而补齐。
 
 ![30天流量趋势](https://yy1.zddyr.top/lx/api/panel.php?key=trend_image_secret_2026&action=trend_image&days=30&t=20261126)
 
